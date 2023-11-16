@@ -39,9 +39,6 @@ public class Utilities {
     }
 
 
-    //Bu method'ta kisilerin butcesi istenen restorana girmeye yeterli degilse
-    // yeterli butceyi saglamak icin kimleri davet edebileceklerini sunmak istedim.
-    // Ama her seferinde else kismina atliyor. Onerebilecegi kisiler olmasina ragmen if calismiyor. Bir tek burada sorun yasadim.
     public static void possibleGuestCombinations(
             String restaurantName,
             int totalBudget,
@@ -54,7 +51,6 @@ public class Utilities {
             System.out.println(person.getName());
             if (!guestNames.contains(person.getName()) && person.getBudget() >= gapInBudget)
                 System.out.println("You can invite "+person.getName());
-            else System.out.println("There is no someone with sufficient budget in the list"); return;
         }
 
     }
